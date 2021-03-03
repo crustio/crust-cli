@@ -1,11 +1,14 @@
 const fs = require('fs');
 const createClient = require('ipfs-http-client');
+const { ipfsTimeout } = require('./consts');
 
 module.exports = { 
     default: async (path) => {
         try {
             // 1. Check local ipfs is alive
-            const client = createClient();
+            const client = createClient({
+                timeout: ipfsTimeout
+            });
 
             // 2. Check legality of path
             if (!fs.existsSync(path)) {
