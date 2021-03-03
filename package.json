@@ -26,6 +26,6 @@
   "scripts": {
     "debug": "nodemon --watch 'src/**/*.js' --exec 'node' src/index.js",
     "build": "tsc -p .",
-    "local": "sudo npm i -g && crustc"
+    "local": "sudo npm i --only=prod -g && crustc"
   }
 }
