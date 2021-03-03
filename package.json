@@ -1,5 +1,5 @@
 {
-  "name": "crust-cli",
+  "name": "@crustio/crust-cli",
   "version": "0.0.1",
   "description": "The Crust command-line interface (Crust CLI) is a set of commands used to access Crust Network resources",
   "repository": "https://github.com/crustio/crust-cli.git",
@@ -7,7 +7,7 @@
   "license": "GPL-3.0",
   "main": "./src/index.js",
   "bin": {
-    "crustc": "./src/index.js"
+    "crust-cli": "./src/index.js"
   },
   "keywords": ["crust", "ipfs", "decentralized storage", "polkadot"],
   "dependencies": {
@@ -26,6 +26,6 @@
   "scripts": {
     "debug": "nodemon --watch 'src/**/*.js' --exec 'node' src/index.js",
     "build": "tsc -p .",
-    "local": "sudo npm i --only=prod -g && crustc"
+    "local": "sudo npm i --only=prod -g && crust-cli"
   }
 }
