@@ -21,8 +21,8 @@ program
 program
   .command('pin')
   .description('Pin file/folder to local IPFS')
-  .option('-c --cid [cid]', 'IPFS file, will be stored locally')
-  .action((args) => withHelper(args.cid, () => program.help(), () => pin(args.cid)))
+  .option('-p --path [path]', 'File or directory you want to publish')
+  .action((args) => withHelper(args.path, () => program.help(), () => pin(args.path)))
 
 program
   .command('publish')
