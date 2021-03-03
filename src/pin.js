@@ -1,11 +1,15 @@
 const fs = require('fs');
-const createClient = require('ipfs-http-client');
+const IpfsHttpClient = require('ipfs-http-client');
+const { globSource } = IpfsHttpClient;
+const { ipfsTimeout } = require('./consts');
 
 module.exports = { 
     default: async (path) => {
         try {
             // 1. Check local ipfs is alive
-            const client = createClient();
+            const ipfs = IpfsHttpClient({
+                timeout: ipfsTimeout
+            });
 
             // 2. Check legality of path
             if (!fs.existsSync(path)) {
@@ -14,7 +18,7 @@ module.exports = {
             }
 
             // 3. Pin it
-            const { cid } = await client.add(path);
+            const { cid } = await ipfs.add(globSource(path, { recursive: true }));
 
             // 4. Check local pin
             if (cid) {

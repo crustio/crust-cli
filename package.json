@@ -9,7 +9,10 @@
   "bin": {
     "crustc": "./src/index.js"
   },
+  "keywords": ["crust", "ipfs", "decentralized storage", "polkadot"],
   "dependencies": {
+    "@crustio/type-definitions": "^0.0.3",
+    "@polkadot/api": "^3.11.1",
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
     "figlet": "^1.5.0",
@@ -23,6 +26,6 @@
   "scripts": {
     "debug": "nodemon --watch 'src/**/*.js' --exec 'node' src/index.js",
     "build": "tsc -p .",
-    "local": "sudo npm i -g && crustc"
+    "local": "sudo npm i --only=prod -g && crustc"
   }
 }
