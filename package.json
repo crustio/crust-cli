@@ -1,6 +1,6 @@
 {
   "name": "@crustio/crust-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Crust command-line interface (Crust CLI) is a set of commands used to access Crust Network resources",
   "repository": "https://github.com/crustio/crust-cli.git",
   "author": "Zikun Fan <zikunvan@gmail.com>",
@@ -11,7 +11,7 @@
   },
   "keywords": ["crust", "ipfs", "decentralized storage", "polkadot"],
   "dependencies": {
-    "@crustio/type-definitions": "^0.0.3",
+    "@crustio/type-definitions": "^0.0.5",
     "@polkadot/api": "^3.11.1",
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
