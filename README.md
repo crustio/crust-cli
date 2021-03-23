@@ -6,12 +6,6 @@ The Crust command-line interface (Crust CLI) is a set of commands used to access
 
 Please refer this [doc]([https://](https://wiki.crust.network/docs/en/buildGettingStarted)) to see how Crust help to host your website without any servers
 
-## Installation
-
-```shell
-npm i -g @crustio/crust-cli
-```
-
 ## Usage
 
 ### 1. Login
@@ -21,7 +15,7 @@ npm i -g @crustio/crust-cli
 **Login** with Crust Account secret **seeds**(*12 random words*), it will be used to sign your publishing transaction.
 
 ```shell
-crust-cli login "vanish desert itch writer pretty unite wax wistful painful pine key bore"
+npx crust-cli login "vanish desert itch writer pretty unite wax wistful painful pine key bore"
 ```
 
 ### 2. Pin
@@ -31,7 +25,7 @@ crust-cli login "vanish desert itch writer pretty unite wax wistful painful pine
 **Pin** will add your file/folder to local IPFS. Make sure you installed [IPFS](https://ipfs.io/#install) and keep it running.
 
 ```shell
-crust-cli pin my-website/build/
+npx crust-cli pin my-website/build/
 ```
 
 ### 3. Publish
@@ -41,7 +35,7 @@ crust-cli pin my-website/build/
 **Publish** will send a `place storage order` transaction to chain, and the storage nodes in Crust Network will help you to store your file through IPFS
 
 ```shell
-crust-cli publish QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
+npx crust-cli publish QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
 ```
 
 ### 4. Status
@@ -49,5 +43,5 @@ crust-cli publish QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
 Status will help you to monitor your file on-chain
 
 ```shell
-crust-cli status QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
+npx crust-cli status QmevJf2rdNibZCGrgeyVJEM82y5DsXgMDHXM6zBtQ6G4Vj
 ```
