@@ -4,7 +4,7 @@ The Crust command-line interface (Crust CLI) is a set of commands used to access
 
 ## Quick Start
 
-Please refer this [doc]([https://](https://wiki.crust.network/docs/en/buildGettingStarted)) to see how Crust help to host your website without any servers
+Please refer this [doc]([https://](https://wiki.crust.network/docs/en/buildGettingStarted)) to see how Crust help to host your website without any servers.
 
 ## Usage
 
@@ -12,7 +12,7 @@ Please refer this [doc]([https://](https://wiki.crust.network/docs/en/buildGetti
 
 > Secret seeds will be stored locally and won't be leaked by cli-itself.
 
-**Login** with Crust Account secret **seeds**(*12 random words*), it will be used to sign your publishing transaction.
+**Login** with Crust Account secret **seeds**(*12/24 random words*), it will be used to sign your publishing transaction.
 
 ```shell
 npx crust-cli login "vanish desert itch writer pretty unite wax wistful painful pine key bore"

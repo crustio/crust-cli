@@ -10,7 +10,7 @@ const status = require('./status').default;
 const { withHelper } = require('./util');
 
 program
-  .version('0.0.1')
+  .version('0.0.2')
   .description(
     'The Crust command-line interface (Crust CLI) is a set of commands used to access Crust Network resources'
   )
