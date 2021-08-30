@@ -14,16 +14,16 @@ module.exports = {
             await chain.isReadyOrError;
 
             // 2. Query on-chain file data
-            const maybeFileUsedInfo = parseObj(await chain.query.market.files(cid));
-            if (maybeFileUsedInfo) {
-                const replicaCount = maybeFileUsedInfo[0].reported_replica_count;
+            const maybeFileInfo = parseObj(await chain.query.market.files(cid));
+            if (maybeFileInfo) {
+                const replicaCount = maybeFileInfo.reported_replica_count;
                 if (replicaCount === 0) {
-                    console.log(`⚠️  ${cid} pending...`);
+                    console.log(`⚠️  ${cid} is pending...`);
                 } else {
-                    console.log(`✅  ${cid} picked, replicas: ${replicaCount}`);
+                    console.log(`✅  ${cid} is picked, replicas: ${replicaCount}`);
                 }
             } else {
-                console.error(`🗑  ${cid} not exist or expired`);
+                console.error(`🗑  ${cid} is not existed or already expired`);
             }
 
             // 3. Disconnect with chain

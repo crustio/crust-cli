@@ -9,10 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@crustio/type-definitions@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@crustio/type-definitions/-/type-definitions-0.0.10.tgz#7a8849d434c338fac2ed9e41a4cfe779138a89e4"
-  integrity sha512-pI5pGklsPxcDBq7jYsqo1DXrEGI2Efq2HpDe+Md84JbNypc+EGUrQS7INVCo3mltZJ9Zc2gl6dMddaUF8apr8Q==
+"@crustio/type-definitions@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@crustio/type-definitions/-/type-definitions-1.2.0.tgz#221a626b8e18ac77fb9e13e6b018803e78727b71"
+  integrity sha512-i/u3WUuhfC76JirlSwyGIKDwoFrax5QUonxGG/wgX2KEDKM9MIVx4qEsphE/tjAxlX1/qO3c72dzvKR2gndhgg==
   dependencies:
     "@open-web3/orml-type-definitions" "^0.8.2-9"
 
@@ -616,6 +616,14 @@ chalk@^4.1.0, chalk@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.1.tgz#c80b3fab28bf6371e6863325eee67e618b77e6ad"
   integrity sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+  integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
