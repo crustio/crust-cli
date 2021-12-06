@@ -1,6 +1,6 @@
 {
   "name": "@crustio/crust-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Crust command-line interface (Crust CLI) is a set of commands used to access Crust Network resources",
   "repository": "https://github.com/crustio/crust-cli.git",
   "author": "Zikun Fan <zikunvan@gmail.com>",

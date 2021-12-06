@@ -6,7 +6,7 @@ module.exports = {
         try {
             // 1. Judge legality of the seeds
             const seedsVec = seeds.split(' ');
-            if (seedsVec.length !== 12 || seedsVec.length !== 24) {
+            if (seedsVec.length !== 12 && seedsVec.length !== 24) {
                 console.error('Seeds illegal, check it again');
                 return;
             }
