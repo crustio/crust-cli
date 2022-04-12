@@ -14,7 +14,7 @@ module.exports = {
             await chain.isReadyOrError;
 
             // 2. Query on-chain file data
-            const maybeFileInfo = parseObj(await chain.query.market.files(cid));
+            const maybeFileInfo = parseObj(await chain.query.market.filesV2(cid));
             if (maybeFileInfo) {
                 const replicaCount = maybeFileInfo.reported_replica_count;
                 if (replicaCount === 0) {
